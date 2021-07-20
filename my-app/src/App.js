@@ -9,6 +9,7 @@ import {
   Link,
   NavLink,
 } from "react-router-dom";
+import SignInSide from './component/SingInSide';
 
 function App() {
   return (
@@ -16,7 +17,9 @@ function App() {
       <div className="App">
     
         <Switch>
-          <Route path="/" exact></Route>
+          <Route path="/" exact>
+          <SignInSide/>
+          </Route>
           <Route path="/start">
             <Navbranch />
             <DropdownButtons />
@@ -25,6 +28,10 @@ function App() {
         </Switch>
       </div>
     </Router>
+
+
+
+
   );
 }
 
