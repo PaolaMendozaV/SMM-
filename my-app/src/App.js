@@ -13,6 +13,7 @@ import { ThemeProvider } from '@material-ui/styles';
 import theme from './themeConfig'
 import ReservationButton from './component/ReservationButton';
 import Calendar from './component/Calendar';
+import ControlledOpenSelect from './component/Selector'
 
 
 
@@ -38,7 +39,9 @@ function App() {
             <Navbranch />
             <DropdownButtons />
               <Calendar/>
+              <ControlledOpenSelect/>
               <ReservationButton/>
+
           </Route>
           <Route path="/reservation"></Route>
         </Switch>
