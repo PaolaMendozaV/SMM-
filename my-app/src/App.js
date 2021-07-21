@@ -2,7 +2,13 @@ import logo from './logo.svg';
 import './App.css';
 import Navbranch from './component/Navbranch'
 import DropdownButtons from './component/DropdownButtons'
-import SignInSide from './component/SingInSide';
+import SignInSide, {Button} from './component/SingInSide';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (

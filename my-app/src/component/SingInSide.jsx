@@ -12,8 +12,11 @@ import Grid from '@material-ui/core/Grid';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import App from '../App'
+
+
 //import FrameEverisColor from  '../img/FrameEverisColor.png'
-import FrameEverisColor from '../img/FrameEverisColor.png'
+
 
 function Copyright() {
   return (
@@ -27,6 +30,8 @@ function Copyright() {
     </Typography>
   );
 }
+
+
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -59,10 +64,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function SignInSide() {
+export default function SignInSide(props) {
   const classes = useStyles();
 
+  let click = () => {
+    console.log('Home')
+  }
+
   return (
+
     <Grid container component="main" className={classes.root}>
       <CssBaseline />
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
@@ -101,15 +111,18 @@ export default function SignInSide() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
+            
             <Button
               type="submit"
               fullWidth
               variant="contained"
               color="primary"
               className={classes.submit}
+              onClick = {click}
             >
               Sign In
             </Button>
+    
             <Grid container>
               <Grid item xs>
                 <Link href="#" variant="body2">
