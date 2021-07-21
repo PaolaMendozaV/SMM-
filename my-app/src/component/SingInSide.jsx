@@ -118,14 +118,14 @@ export default function SignInSide(props) {
               variant="contained"
               color="secondary"
               className={classes.submit}
-            
+              href="/start"
             >
               Sign In
             </Button>
     
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href="/bla" variant="body2">
                   Forgot password?
                 </Link>
               </Grid>
