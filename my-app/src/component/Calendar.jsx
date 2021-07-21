@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+
 
 const useStyles = makeStyles((theme) => ({
   container: {
@@ -17,13 +18,16 @@ const useStyles = makeStyles((theme) => ({
 export default function DatePickers() {
   const classes = useStyles();
 
+  const [dateSelect, changeDateSelect]= useState(new Date());
+
   return (
     <form className={classes.container} noValidate>
       <TextField
         id="date"
         label="Fecha"
         type="date"
-        defaultValue="2017-05-24"
+        // disablePast="true" intentando bloquear ciertas fechas ...
+        defaultValue= {dateSelect} onChange= {changeDateSelect}
         className={classes.textField}
         InputLabelProps={{
           shrink: true,
