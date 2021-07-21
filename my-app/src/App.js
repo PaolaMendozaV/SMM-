@@ -10,12 +10,23 @@ import {
   NavLink,
 } from "react-router-dom";
 import SignInSide from './component/SingInSide';
+import { ThemeProvider } from '@material-ui/styles';
+import theme from './themeConfig'
+
+
 
 function App() {
   return (
-    <Router>
-      <div className="App">
     
+   <Router>
+      < ThemeProvider theme={theme} className="App">
+    {/* <div>
+      <Link to= {SignInSide}>
+
+      </Link>
+
+    </div> */}
+
         <Switch>
           <Route path="/" exact>
           <SignInSide/>
@@ -26,8 +37,9 @@ function App() {
           </Route>
           <Route path="/reservation"></Route>
         </Switch>
-      </div>
+        </ThemeProvider>
     </Router>
+    
 
 
 
