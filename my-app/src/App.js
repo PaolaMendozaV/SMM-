@@ -12,6 +12,8 @@ import {
 import SignInSide from './component/SingInSide';
 import { ThemeProvider } from '@material-ui/styles';
 import theme from './themeConfig'
+import ReservationButton from './component/ReservationButton';
+import Calendar from './component/Calendar';
 
 
 
@@ -34,14 +36,14 @@ function App() {
           <Route path="/start">
             <Navbranch />
             <DropdownButtons />
+              <Calendar/>
+              <ReservationButton/>
           </Route>
           <Route path="/reservation"></Route>
         </Switch>
         </ThemeProvider>
     </Router>
     
-
-
 
 
   );
