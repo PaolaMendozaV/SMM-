@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+#dropdown-item-button {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  background-color: white;
+  border-color: black;
+  color: black;
+} 
+.btnreservation {
+  margin-top: 1rem;
+}
