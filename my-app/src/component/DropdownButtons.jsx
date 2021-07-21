@@ -7,7 +7,7 @@ const DropdownButtons = () => {
   return (
     <div>
       <DropdownButton id="dropdown-item-button" title="Jornada">
-        <Dropdown.Item as="button">Diurno</Dropdown.Item>
+        <Dropdown.Item as="button" eventKey="option-1">Diurno</Dropdown.Item>
         <Dropdown.Item as="button">Vespertino</Dropdown.Item>
         <Dropdown.Item as="button">Completa</Dropdown.Item>
       </DropdownButton>
