@@ -1,4 +1,3 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Navbranch from "./component/Navbranch";
 import DropdownButtons from "./component/DropdownButtons";
@@ -21,17 +20,19 @@ function App() {
   return (
     
    <Router>
-      < ThemeProvider theme={theme} className="App">
+      {/*< ThemeProvider theme={theme} className="App">*/}
     {/* <div>
       <Link to= {SignInSide}>
 
       </Link>
 
     </div> */}
-
+      <div className="App">
         <Switch>
           <Route path="/" exact>
+          < ThemeProvider theme={theme}>
           <SignInSide/>
+          </ThemeProvider>
           </Route>
           <Route path="/start">
             <Navbranch />
@@ -41,7 +42,8 @@ function App() {
           </Route>
           <Route path="/reservation"></Route>
         </Switch>
-        </ThemeProvider>
+        {/*</ThemeProvider>*/}
+        </div>
     </Router>
     
 
