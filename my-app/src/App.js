@@ -1,6 +1,6 @@
 import "./App.css";
 import Navbranch from "./component/Navbranch";
-import DropdownButtons from "./component/DropdownButtons";
+//import DropdownButtons from "./component/DropdownButtons";
 import {
   BrowserRouter as Router,
   Switch,
@@ -11,9 +11,9 @@ import {
 import SignInSide from './component/SingInSide';
 import { ThemeProvider } from '@material-ui/styles';
 import theme from './themeConfig'
-import ReservationButton from './component/ReservationButton';
-import Calendar from './component/Calendar';
-import ControlledOpenSelect from './component/Selector'
+//import ReservationButton from './component/ReservationButton';
+//import Calendar from './component/Calendar';
+import Selector from './component/Selector'
 
 
 
@@ -32,15 +32,13 @@ function App() {
         <Switch>
           <Route path="/" exact>
           < ThemeProvider theme={theme}>
-          <SignInSide/>
+            <SignInSide/>
           </ThemeProvider>
           </Route>
           <Route path="/start">
             <Navbranch />
-            <DropdownButtons />
-              <Calendar/>
-              <ControlledOpenSelect/>
-              <ReservationButton/>
+            
+            <Selector/>
 
           </Route>
           <Route path="/reservation"></Route>
