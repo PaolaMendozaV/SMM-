@@ -1,0 +1,67 @@
+{
+  "booking": [
+      {
+          "id": "1",
+          
+          "date": "Bibimbap",
+          "journal": ["diurno", "vespertino", "completa"],
+          "description": "Consiste en un plato de arroz, verduras, carne y huevo con unos aliños y una salsa.",
+          "price": "13490"
+      },
+      {
+          "id": "2",
+          "images": "https://firebasestorage.googleapis.com/v0/b/burger-queen-fee8c.appspot.com/o/Im%C3%A1genes%20Men%C3%BA%2Fkimchi.png?alt=media&token=2c660356-1ef7-41d6-b2a0-0c7ade30561b",
+          "name": "Kimchi",
+          "type": "Food",
+          "description": "Platillo coreano hecho a base de preparación fermentada que tiene como ingrediente básico la col asiática o repollo.",
+          "price": "7490"
+      },
+      {
+          "id": "3",
+          "images": "https://firebasestorage.googleapis.com/v0/b/burger-queen-fee8c.appspot.com/o/Im%C3%A1genes%20Men%C3%BA%2Fsamgyeopsal.png?alt=media&token=ce74f1f3-1ea8-4aee-936e-1c1959341179",
+          "name": "Samgyeopsal",
+          "type": "Food",
+          "description": " Cortes muy parecidos al tocino pero más gruesos, previamente condimentados con  ajo, cebolla, hongos, kimchi, y pimientos.",
+          "price": "14490"
+      },
+      {
+          "id": "4",
+          "images": "https://firebasestorage.googleapis.com/v0/b/burger-queen-fee8c.appspot.com/o/Im%C3%A1genes%20Men%C3%BA%2Fbulgogi.png?alt=media&token=5f99673e-e59a-4e33-b950-5f4f7be18bd1",
+          "name": "Bulgogi",
+          "type": "Food",
+          "description": "El ingrediente fundamental es ternera cortada en tiras y marinada con salsa de soja, azúcar, aceite de sésamo y ajo que posteriormente se cocina a la parrilla",
+          "price": "8290"
+      },
+      {    "id": "5",
+          "images": "https://firebasestorage.googleapis.com/v0/b/burger-queen-fee8c.appspot.com/o/Im%C3%A1genes%20Men%C3%BA%2Fsoju.png?alt=media&token=79572eed-4797-44ec-89aa-b10a42c4735c",
+          "name": "Soju",
+          "type": "Drink",
+          "description": "Bebida alcohólica destilada hecha de arroz.",
+          "price": "3390"
+      },
+      {
+          "id": "6",
+          "images": "https://firebasestorage.googleapis.com/v0/b/burger-queen-fee8c.appspot.com/o/Im%C3%A1genes%20Men%C3%BA%2Fsake.png?alt=media&token=0e5e5e65-6d2d-4c9e-99d9-85f2f625954b",
+          "name": "Sake",
+          "type": "Drink",
+          "description": "bebida alcohólica obtenida por fermentación del arroz.",
+          "price": "6490"
+      },
+      {
+          "id": "7",
+          "images": "https://firebasestorage.googleapis.com/v0/b/burger-queen-fee8c.appspot.com/o/Im%C3%A1genes%20Men%C3%BA%2Fzumo-frutas.png?alt=media&token=01cdf38b-b0e3-4432-8cb0-8353807a70eb",
+          "name": "Zumo de Frutas",
+          "type": "Drink",
+          "description": "Jugo concentrado de frutas.",
+          "price": "2190"
+      },
+      {
+          "id": "8",
+          "images": "https://firebasestorage.googleapis.com/v0/b/burger-queen-fee8c.appspot.com/o/Im%C3%A1genes%20Men%C3%BA%2Fte-coreano.png?alt=media&token=03532878-90f5-434f-808a-f73dbbccdda7",
+          "name": "Té Coreano",
+          "type": "Drink",
+          "description": "Infusión de las hojas y brotes de la planta del té",
+          "price": "1590"
+      }
+  ]
+}
