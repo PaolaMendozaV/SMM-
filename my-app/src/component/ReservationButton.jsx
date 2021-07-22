@@ -5,7 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const ReservationButton = ({click}) => {
   return (
     <div>
-      <Button className="btnreservation" variant="primary" onClick={click}>Reserva</Button>{" "}
+      <Button className="btnreservation" variant="primary" onClick={click} href="/reservation">Reserva</Button>{" "}
     </div>
   );
 };

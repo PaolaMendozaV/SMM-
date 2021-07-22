@@ -28,6 +28,7 @@ export default function DatePickers() {
   };*/
 
   return (
+    <>
     <form className={classes.container} noValidate>
       <TextField
         id="date"
@@ -42,5 +43,6 @@ export default function DatePickers() {
         }}
       />
     </form>
+    </>
   );
 }

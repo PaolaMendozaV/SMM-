@@ -27,9 +27,7 @@ export default function ControlledOpenSelect() {
   ///////States JOURNAL and PEOPLE////////
 
 const [journalState, setJournalState] = /*useState([]);*/useLocalStorage('journalState', '')
-console.log(journalState)
 const [peopleState, setPeopleState] = /*useState([]); */ useLocalStorage('peopleState', '')
-console.log(peopleState)
 
 
 ///////// FUNCION SETSTATEJOURNAL
@@ -67,6 +65,9 @@ const [open, setOpen] = React.useState(false);
       console.log('click')
   }
   
+  
+
+
 
   return (
     <div>
