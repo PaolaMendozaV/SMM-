@@ -5,16 +5,14 @@ Hackaton Laboratoria SCL 016
 
 Space Management es un proyecto para la empresa EVERIS en el cual se nos pidió crear un sistema de reservas para que los trabajadores pudieran agendar horas de trabajo en la oficina seccionadas entre, salas pequeñas y grandes.
 
-**- Prototipo alta fidelidad en figma:**
-![](https://i.imgur.com/V5ZiITJ.png)
-![](https://i.imgur.com/NtV3gzn.png)
-![](https://i.imgur.com/bxRYEPJ.png)
+**- Prototipo alta fidelidad en figma:*
 
-
+![](https://i.imgur.com/UxgoD9q.png)
+![](https://i.imgur.com/pHZAi4M.png)
+![](https://i.imgur.com/B5SN235.png)
 
 
 **- Imagenes proyecto final en proceso de modificación:**
-
 
 
 
@@ -35,4 +33,3 @@ Para la creación de nuestro proyecto solo nos concentramos en los requerimiento
 Crear una interfaz amigable para el/la trabajador, que funcione con rapidez y sea intuitiva.
 La incorporación de filtros es el motor que nos impulsa llevar a cabo al distribución la información.
 Los colores en el diseño son basicamente los colores utilizados por la empresa entregados explicitamente en el moodboard.
-
