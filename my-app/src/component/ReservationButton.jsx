@@ -2,10 +2,10 @@ import React from "react";
 import { Button } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-const ReservationButton = () => {
+const ReservationButton = ({click}) => {
   return (
     <div>
-      <Button className="btnreservation" variant="primary">Reserva</Button>{" "}
+      <Button className="btnreservation" variant="primary" onClick={click}>Reserva</Button>{" "}
     </div>
   );
 };
