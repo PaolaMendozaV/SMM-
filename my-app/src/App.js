@@ -1,6 +1,5 @@
 import "./App.css";
 import Navbranch from "./component/Navbranch";
-import DropdownButtons from "./component/DropdownButtons";
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,15 +13,17 @@ import theme from './themeConfig'
 import ReservationButton from './component/ReservationButton';
 import Calendar from './component/Calendar';
 import ControlledOpenSelect from './component/Selector'
+import TypografyPage1 from './component/TypographyPage1';
+import FooterPage1 from "./component/FooterPage1";
 
 
 
 function App() {
   return (
-    
-   <Router>
+
+    <Router>
       {/*< ThemeProvider theme={theme} className="App">*/}
-    {/* <div>
+      {/* <div>
       <Link to= {SignInSide}>
 
       </Link>
@@ -31,24 +32,26 @@ function App() {
       <div className="App">
         <Switch>
           <Route path="/" exact>
-          < ThemeProvider theme={theme}>
-          <SignInSide/>
-          </ThemeProvider>
+            < ThemeProvider theme={theme}>
+              <SignInSide />
+            </ThemeProvider>
           </Route>
+          {/* comienzo pagina uno */}
           <Route path="/start">
             <Navbranch />
-            <DropdownButtons />
-              <Calendar/>
-              <ControlledOpenSelect/>
-              <ReservationButton/>
-
+            <TypografyPage1 />
+            <Calendar />
+            <ControlledOpenSelect />
+            <ReservationButton />
+            <FooterPage1 />
+          {/* final pagina uno */}
           </Route>
           <Route path="/reservation"></Route>
         </Switch>
         {/*</ThemeProvider>*/}
-        </div>
+      </div>
     </Router>
-    
+
 
 
   );

@@ -1,0 +1,31 @@
+.header.header{
+    background-color:#EBEBEB;
+}
+.logoEveris{
+    max-width: 90px;
+    width: 100%;
+  }
+ .menu-icon{
+     display: none!important;
+ }
+ #logout{
+     position: absolute;
+     right: 10px;
+ }
+ .MuiButtonBase-root button{
+     justify-content: flex-end;
+ }
+/* Toggle para mobile */
+@media (max-width: 640px){
+    #logout{
+        display: none;
+    }
+    .menu-icon{
+        display: block!important;
+        position: absolute!important;
+        right: 10px;
+    }  
+}
+
+
+  
