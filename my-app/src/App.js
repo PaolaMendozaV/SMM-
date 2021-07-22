@@ -10,11 +10,12 @@ import {
 import SignInSide from './component/SingInSide';
 import { ThemeProvider } from '@material-ui/styles';
 import theme from './themeConfig'
-import ReservationButton from './component/ReservationButton';
-import Calendar from './component/Calendar';
 import ControlledOpenSelect from './component/Selector'
 import TypografyPage1 from './component/TypographyPage1';
 import FooterPage1 from "./component/FooterPage1";
+import Selector from './component/Selector'
+import Reservation from './component/Reservation'
+
 
 
 
@@ -40,13 +41,14 @@ function App() {
           <Route path="/start">
             <Navbranch />
             <TypografyPage1 />
-            <Calendar />
             <ControlledOpenSelect />
-            <ReservationButton />
             <FooterPage1 />
           {/* final pagina uno */}
+            <Selector/>
           </Route>
-          <Route path="/reservation"></Route>
+          <Route path="/reservation">
+          <Reservation/>
+          </Route>
         </Switch>
         {/*</ThemeProvider>*/}
       </div>
