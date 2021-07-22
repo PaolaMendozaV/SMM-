@@ -23,17 +23,28 @@ const useStyles = makeStyles((theme) => ({
 export default function ControlledOpenSelect() {
   const classes = useStyles();
 
+  ///////JOURNAL////////
+
   const [journalState, setJournalState] = useState([]);
-
-
   
-  const [open, setOpen] = React.useState(false);
 
-  const handleChange = (event) => {
-      setJournalState(event.target.value); 
+  const handleChange = (e) => {
+    const journalValue = e.target.value;  
+    setJournalState(journalValue)
   };
 
+  ///////Personas///////
 
+  const [peopleState, setPeopleState] = useState([]);
+  
+
+  const handlePeopleChange = (e) => {
+    const peopleValue = e.target.value;  
+    setPeopleState(peopleValue)
+  };
+
+//////////////////////////////////////////////////////
+  const [open, setOpen] = React.useState(false);
 
   const handleClose = () => {
     setOpen(false);
@@ -68,12 +79,12 @@ export default function ControlledOpenSelect() {
           onChange={handleChange}
         >
           <MenuItem value="jornada">
-           
           </MenuItem>
           <MenuItem value={'Mañana'}>Mañana</MenuItem>
           <MenuItem value={'Tarde'}>Tarde</MenuItem>
           <MenuItem value={'Completa'}>Completa</MenuItem>
         </Select>
+        {journalState}
       </FormControl>
       </div>
 
@@ -89,9 +100,9 @@ export default function ControlledOpenSelect() {
           id="demo-controlled-open-select"
           //open={open}
           //onClose={handleClose}
-         // onOpen={handleOpen}
-          //value={age}
-          //onChange={handleChange}
+          //onOpen={handleOpen}
+          value={peopleState}
+          onChange={handlePeopleChange}
         >
           <MenuItem value="personas">
          
@@ -112,6 +123,7 @@ export default function ControlledOpenSelect() {
           <MenuItem value={14}>14</MenuItem>
           <MenuItem value={15}>15</MenuItem>
         </Select>
+        {peopleState}
       </FormControl>
       </div>
       <ReservationButton click = {click}/>
