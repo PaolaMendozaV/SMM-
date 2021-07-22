@@ -6,7 +6,7 @@ import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 import Button from '@material-ui/core/Button';
 import ReservationButton from './ReservationButton';
-import Calendar from './Calendar';
+import Calendar from './Calendar'
 
 
 const useStyles = makeStyles((theme) => ({
@@ -25,26 +25,32 @@ export default function ControlledOpenSelect() {
 
   ///////JOURNAL////////
 
-  const [journalState, setJournalState] = useState([]);
-  
+const [journalState, setJournalState] = useState([]);
+const [peopleState, setPeopleState] = useState([]);  
+
+
 
   const handleChange = (e) => {
-    const journalValue = e.target.value;  
+    const journalValue = [e.target.value];  
     setJournalState(journalValue)
   };
 
   ///////Personas///////
-
-  const [peopleState, setPeopleState] = useState([]);
-  
-
   const handlePeopleChange = (e) => {
-    const peopleValue = e.target.value;  
+    const peopleValue = [e.target.value];    
     setPeopleState(peopleValue)
   };
+const userReservation= [...journalState, ...peopleState];
+console.log(userReservation)
 
+
+  
+// const valueUser=[...journalValue, peopleValue];
+// console.log(valueUser) 
 //////////////////////////////////////////////////////
-  const [open, setOpen] = React.useState(false);
+ 
+  
+const [open, setOpen] = React.useState(false);
 
   const handleClose = () => {
     setOpen(false);
@@ -57,7 +63,7 @@ export default function ControlledOpenSelect() {
   const click = () => {
       console.log('click')
   }
-
+  
 
   return (
     <div>
@@ -90,6 +96,7 @@ export default function ControlledOpenSelect() {
 
       <div>
       <Calendar/>
+
       </div>
 
       <div>

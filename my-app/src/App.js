@@ -14,6 +14,8 @@ import theme from './themeConfig'
 //import ReservationButton from './component/ReservationButton';
 //import Calendar from './component/Calendar';
 import Selector from './component/Selector'
+import Reservation from './component/Reservation'
+
 
 
 
@@ -41,7 +43,9 @@ function App() {
             <Selector/>
 
           </Route>
-          <Route path="/reservation"></Route>
+          <Route path="/reservation">
+          <Reservation/>
+          </Route>
         </Switch>
         {/*</ThemeProvider>*/}
         </div>
