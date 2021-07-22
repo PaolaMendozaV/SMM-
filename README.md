@@ -14,9 +14,7 @@ Space Management es un proyecto para la empresa EVERIS en el cual se nos pidió 
 
 
 **- Imagenes proyecto final en proceso de modificación:**
-![](https://i.imgur.com/kvjnxpm.jpg)
 
-![](https://i.imgur.com/y7JBTtH.jpg)
 
 
 
